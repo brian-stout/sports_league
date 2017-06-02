@@ -6,7 +6,7 @@ CREATE TABLE players (
 				id INTEGER(4) not null primary key, 
 				firstname VARCHAR(10) not null,
 				lastname VARCHAR(10) not null,
-				team VARCHAR(10),
+				team VARCHAR(30),
 				playernum INTEGER(4)
 			);
 
