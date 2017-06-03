@@ -1,6 +1,8 @@
 drop table if exists playerattributes;
 
-# age, height, weight
+/* Creations of the player attributes table
+	contains meta information on players such as age, height, and weight */
+
 CREATE TABLE playerattributes (
 				playerId INTEGER(4) not null primary key,
 				age INTEGER(2),

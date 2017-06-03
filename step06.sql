@@ -1,19 +1,20 @@
-#tables are games, playerattributes, players, results, teams
-#teams = id, teamname
 /*
-	(auto-increment id?) Carolina Hurricanes
+	Carolina Hurricanes
 	Washington Capitals
 	Nashville Predators
 	Pittsburgh Penguins
 */
 
+	#Unique team id, team name
 	insert into teams values (0, 'Carolina Hurricanes');
 	insert into teams values (1, 'Washington Capitals');
 	insert into teams values (2, 'Nashville Predators');
 	insert into teams values (3, 'Pittsburgh Penguins');
 
-#players = id, firstname, lastname, team, playernum
+
 /*
+	All the collected player stats
+
 	Cam, Ward, Carolina Hurricanes, 30
 	Justin, Faulk, Carolina Hurricanes, 27
 	Jeff, Skinner, Carolina Hurricanes, 53
@@ -50,7 +51,12 @@
 	(Malkin) 30, 75, 195
 
 */
+	#Unique player ID, First Name, Last Name, Team, Jersey Number
+	#If a team or jersey number is not applicable, then insert null
 	insert into players values(0, 'Cam', 'Ward', 'Carolina Hurricanes', 30);
+	
+	
+	#Unique player ID (should match with players regular id, age, height (inches), weight
 	insert into playerattributes values(0, 33, 73, 185);
 
 	insert into players values(1, 'Justin', 'Faulk', 'Carolina Hurricanes', 27);
@@ -102,10 +108,8 @@
 	insert into playerattributes values(16, 30, 75, 195);
 
 
+	/* Inserting all the game data */
 
-#Hurr0 Caps1 Preds2 Pens3
-#games = id, gameday, homeId, visitId
-#results = gameid, teamid, points, result
 	#2016-11-05 8:00, (preds), (canes) (2-3 SO)
 	insert into games values(0, '2016-11-05 08:00:00', 2, 0);
 	insert into results values(0, 2, 2, 3, 'LST');

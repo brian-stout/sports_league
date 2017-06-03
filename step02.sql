@@ -1,7 +1,12 @@
 drop table if exists players;
+/* Triggers being used to detect if a user is trying to input a team without
+	a jersey number */
 drop trigger if exists InsertJerseyCheck;
 drop trigger if exists UpdateJerseyCheck;
 
+/* Creations of the players table
+	contains players on the teams specifically their id, firstname, last name,
+	and team + jersey number (playernum) if applicable */
 CREATE TABLE players (
 				playerId INTEGER(4) not null primary key, 
 				firstname VARCHAR(10) not null,
@@ -10,6 +15,10 @@ CREATE TABLE players (
 				playernum INTEGER(4)
 			);
 
+/* https://dba.stackexchange.com/a/94053
+	This trigger is essentially checking on an insertion or update if every row in a table
+	satisfies a certain condition.  In this table the condition is that both team and player num
+	have to have a value or be null*/
 
 DELIMITER //
 CREATE TRIGGER InsertJerseyCheck BEFORE INSERT ON players

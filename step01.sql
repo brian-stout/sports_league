@@ -1,3 +1,4 @@
+/* making sure nothing exists here */
 drop table if exists teams;
 
 CREATE TABLE teams (

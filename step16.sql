@@ -1,3 +1,5 @@
+/* Similar to the team ID players check, this query displays all games played on a specific date */
+
 set @date='2016-11-016';
 
 select * from games
