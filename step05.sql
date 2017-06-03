@@ -10,5 +10,17 @@ CREATE TABLE results (
 				teamId INTEGER(4) not null,
 				pointsFor INTEGER(2) not null,
 				pointsLost INTEGER(2) not null,
-				result ENUM('WIN', 'LST')
+				result ENUM('WIN', 'LST'),
+
+				/* Same foreign key handling as players.  If a game does not have a record in games
+					we do not need its results */
+
+				INDEX (gameId, teamId),
+				FOREIGN KEY (gameId)
+					REFERENCES games(gameId)
+					ON UPDATE CASCADE ON DELETE CASCADE,
+
+				FOREIGN KEY (teamId)
+					REFERENCES teams(teamId)
+					ON UPDATE CASCADE ON DELETE CASCADE
 			);

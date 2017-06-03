@@ -143,7 +143,7 @@
 	#2017-01-31 07:00:00, (pens), (preds) (4-2)
 	insert into games values(6, '2017-01-31 07:00:00', 3, 2);
 	insert into results values(6, 3, 4, 2, 'WIN');
-	insert into results values(6, 1, 2, 4, 'LST');
+	insert into results values(6, 2, 2, 4, 'LST');
 
 	#2017-02-25 05:00:00, (preds), (caps) (5-2)
 	insert into games values(7, '2017-02-25 05:00:00', 2, 1);

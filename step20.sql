@@ -1,5 +1,5 @@
-/*For the precision 
-www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-avg().php
+/* For the precision 
+	www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-avg().php
 */
 
 /* Displays which team scored the most goals on average per gamee */
