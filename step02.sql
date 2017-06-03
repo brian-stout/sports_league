@@ -3,7 +3,7 @@ drop trigger if exists InsertJerseyCheck;
 drop trigger if exists UpdateJerseyCheck;
 
 CREATE TABLE players (
-				id INTEGER(4) not null primary key, 
+				playerId INTEGER(4) not null primary key, 
 				firstname VARCHAR(10) not null,
 				lastname VARCHAR(10) not null,
 				team VARCHAR(30),

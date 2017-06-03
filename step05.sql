@@ -7,5 +7,6 @@ CREATE TABLE results (
 				gameId INTEGER(4) not null,
 				teamId INTEGER(4) not null,
 				pointsFor INTEGER(2) not null,
+				pointsLost INTEGER(2) not null,
 				result ENUM('WIN', 'LST')
 			);

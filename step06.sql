@@ -98,6 +98,9 @@
 	insert into players values(15, 'Evegeni', 'Malkin', 'Pittsburgh Penguins', 71);
 	insert into playerattributes values(15, 30, 75, 195);
 
+	insert into players values(16, 'Bob', 'Schmo', null, null);
+	insert into playerattributes values(16, 30, 75, 195);
+
 
 
 #Hurr0 Caps1 Preds2 Pens3
@@ -105,40 +108,40 @@
 #results = gameid, teamid, points, result
 	#2016-11-05 8:00, (preds), (canes) (2-3 SO)
 	insert into games values(0, '2016-11-05 08:00:00', 2, 0);
-	insert into results values(0, 2, 2, 'LST');
-	insert into results values(0, 0, 3, 'WIN');
+	insert into results values(0, 2, 2, 3, 'LST');
+	insert into results values(0, 0, 3, 2, 'WIN');
 
 	#2016-11-12 7:00, (canes), (caps) (5-1)
 	insert into games values(1, '2016-11-12 07:00:00', 0, 1);
-	insert into results values(1, 0, 5, 'WIN');
-	insert into results values(1, 1, 1, 'LST');
+	insert into results values(1, 0, 5, 1, 'WIN');
+	insert into results values(1, 1, 1, 5, 'LST');
 
 	#2016-12-16 7:30, (canes), (caps) (3-4)
 	insert into games values(2, '2016-12-16 07:30:00', 0, 1);
-	insert into results values(2, 0, 3, 'LST');
-	insert into results values(2, 1, 4, 'WIN');
+	insert into results values(2, 0, 3, 4, 'LST');
+	insert into results values(2, 1, 4, 3, 'WIN');
 
 	#2016-12-28 7:30, (pens), (caps) (3-2)
 	insert into games values(3, '2016-12-28 07:30:00', 3, 1);
-	insert into results values(3, 3, 3, 'WIN');
-	insert into results values(3, 1, 2, 'LST');
+	insert into results values(3, 3, 3, 2, 'WIN');
+	insert into results values(3, 1, 2, 3, 'LST');
 
 	#2016-10-13 08:00:00, (pens), (caps) (3-2 SO)
 	insert into games values(4, '2016-10-13 08:00:00', 3, 1);
-	insert into results values(4, 3, 3, 'WIN');
-	insert into results values(4, 1, 2, 'LST');
+	insert into results values(4, 3, 3, 2, 'WIN');
+	insert into results values(4, 1, 2, 3, 'LST');
 
 	#2016-11-16 07:30:00, (caps), (pens) (7-1)
 	insert into games values(5, '2016-11-16 07:30:00', 1, 3);
-	insert into results values(5, 1, 7, 'WIN');
-	insert into results values(5, 3, 1, 'LST');
+	insert into results values(5, 1, 7, 1, 'WIN');
+	insert into results values(5, 3, 1, 7, 'LST');
 
 	#2017-01-31 07:00:00, (pens), (preds) (4-2)
 	insert into games values(6, '2017-01-31 07:00:00', 3, 2);
-	insert into results values(6, 3, 4, 'WIN');
-	insert into results values(6, 1, 2, 'LST');
+	insert into results values(6, 3, 4, 2, 'WIN');
+	insert into results values(6, 1, 2, 4, 'LST');
 
 	#2017-02-25 05:00:00, (preds), (caps) (5-2)
 	insert into games values(7, '2017-02-25 05:00:00', 2, 1);
-	insert into results values(7, 2, 5, 'WIN');
-	insert into results values(7, 1, 2, 'LST');
+	insert into results values(7, 2, 5, 2, 'WIN');
+	insert into results values(7, 1, 2, 5, 'LST');
