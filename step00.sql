@@ -1,15 +1,15 @@
-drop table if exists games;
-drop table if exists playerattributes;
-drop table if exists players;
-drop table if exists results;
-drop table if exists teams;
+/* An extra script that completely removes the database and populates it with data again */
 
+source step23.sql;
 source step01.sql;
 source step02.sql;
 source step03.sql;
 source step04.sql;
 source step05.sql;
 source step06.sql;
+
+/* Uncomment these if you wish to run all the scripts in a row */
+/*
 source step07.sql;
 source step08.sql;
 source step09.sql;
@@ -26,6 +26,7 @@ source step20.sql;
 source step20.sql;
 source step21.sql;
 source step22.sql;
-#source step24.sql;
-#source step23.sql;
+source step24.sql;
+source step23.sql;
+*/
 
