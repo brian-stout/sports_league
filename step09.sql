@@ -4,9 +4,9 @@
 	Predators = 2
 	Penguins = 3 */
 
-set @team_id=0;
+SET @team_id=0;
 
-select CONCAT(lastname, ' ', firstname) as 'name', playernum as 'jersey number'
-from players
-where team = (select teamname from teams where teamId = @team_id)
-order by playernum;
+SELECT CONCAT(lastname, ' ', firstname) AS 'name', playernum as 'jersey number'
+FROM players
+WHERE team = (SELECT teamname FROM teams WHERE teamId = @team_id)
+ORDER BY playernum;

@@ -1,2 +1,2 @@
 /* Average height of all players */
-select AVG(height) from playerattributes;
+SELECT AVG(height) FROM playerattributes;

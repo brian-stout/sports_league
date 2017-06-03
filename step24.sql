@@ -1,6 +1,6 @@
-select * from teams;
-select * from players;
-select * from playerattributes;
-select * from games;
-select * from results;
+SELECT * FROM teams;
+SELECT * FROM players;
+SELECT * FROM playerattributes;
+SELECT * FROM games;
+SELECT * FROM results;
 

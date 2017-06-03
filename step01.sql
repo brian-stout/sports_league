@@ -1,8 +1,8 @@
 /* making sure nothing exists here */
-drop table if exists teams;
+DROP TABLE if EXISTS teams;
 
 CREATE TABLE teams (
-				teamId INTEGER(4) not null primary key, 
+				teamId INTEGER(4) NOT null primary key, 
 				teamname VARCHAR(30)
 			);
 

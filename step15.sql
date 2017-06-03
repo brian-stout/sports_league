@@ -1,3 +1,3 @@
 /* Counts how many players are in the database */
 
-select COUNT(*) 'number of players' from players;
+SELECT COUNT(*) 'number of players' FROM players;

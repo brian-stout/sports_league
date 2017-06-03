@@ -1,4 +1,4 @@
-drop table if exists results;
+DROP TABLE if EXISTS results;
 
 # TODO: Support overtime losses and shootout losses
 
@@ -6,10 +6,10 @@ drop table if exists results;
 	won it.  Also lists how many goals were scored, and how many goals were scored against.
 	The goals against is for more specific goalie stats like goals scored on per average game (GAA) */
 CREATE TABLE results (
-				gameId INTEGER(4) not null,
-				teamId INTEGER(4) not null,
-				pointsFor INTEGER(2) not null,
-				pointsLost INTEGER(2) not null,
+				gameId INTEGER(4) NOT null,
+				teamId INTEGER(4) NOT null,
+				pointsFor INTEGER(2) NOT null,
+				pointsLost INTEGER(2) NOT null,
 				result ENUM('WIN', 'LST'),
 
 				/* Same foreign key handling as players.  If a game does not have a record in games

@@ -4,11 +4,11 @@
 
 /* Displays which team scored the most goals on average per gamee */
 
-select 
-	(select teamname from teams where teams.teamId = results.teamId) as 'Team', 
-	ROUND(AVG(pointsFor), 2) as 'AVG goals'
-from results
-group by results.teamId
-order by AVG(pointsFor) DESC
+SELECT 
+	(SELECT teamname FROM teams WHERE teams.teamId = results.teamId) AS 'Team', 
+	ROUND(AVG(pointsFor), 2) AS 'AVG goals'
+FROM results
+GROUP BY results.teamId
+ORDER BY AVG(pointsFor) DESC
 LIMIT 1;
 

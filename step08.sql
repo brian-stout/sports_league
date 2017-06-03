@@ -1,7 +1,7 @@
 /* Displays all players sorted alphabetically by last name */
 
-select CONCAT(lastname, ' ', firstname) as 'name', age, height as 'height (in)',
-	weight as 'weight (lbs)'
-from players, playerattributes
-where players.playerId = playerattributes.playerId
-order by lastname;
+SELECT CONCAT(lastname, ' ', firstname) AS 'name', age, height AS 'height (in)',
+	weight AS 'weight (lbs)'
+FROM players, playerattributes
+WHERE players.playerId = playerattributes.playerId
+ORDER BY lastname;

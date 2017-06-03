@@ -1,16 +1,16 @@
-drop table if exists players;
+DROP TABLE if EXISTS players;
 /* Triggers being used to detect if a user is trying to input a team without
 	a jersey number */
-drop trigger if exists InsertJerseyCheck;
-drop trigger if exists UpdateJerseyCheck;
+DROP TRIGGER if EXISTS InsertJerseyCheck;
+DROP TRIGGER if EXISTS UpdateJerseyCheck;
 
 /* Creations of the players table
 	contains players on the teams specifically their id, firstname, last name,
 	and team + jersey number (playernum) if applicable */
 CREATE TABLE players (
-				playerId INTEGER(4) not null primary key, 
-				firstname VARCHAR(10) not null,
-				lastname VARCHAR(10) not null,
+				playerId INTEGER(4) NOT null primary key, 
+				firstname VARCHAR(10) NOT null,
+				lastname VARCHAR(10) NOT null,
 				team VARCHAR(30),
 				playernum INTEGER(4)
 			);

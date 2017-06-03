@@ -1,6 +1,6 @@
-drop table if exists playerattributes;
-drop table if exists players;
-drop table if exists results;
-drop table if exists games;
-drop table if exists teams;
+DROP TABLE if EXISTS playerattributes;
+DROP TABLE if EXISTS players;
+DROP TABLE if EXISTS results;
+DROP TABLE if EXISTS games;
+DROP TABLE if EXISTS teams;
 
